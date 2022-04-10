@@ -38,8 +38,10 @@ async def handle(msg):
 async def getMeaning(text):
     # create url
     url = 'https://www.oxfordlearnersdictionaries.com/definition/english/' + text
+    # define headers
+    headers = { 'User-Agent': 'Generic user agent' }
     # get page
-    page = requests.get(url)
+    page = requests.get(url, headers=headers)
     # let's soup the page
     soup = BeautifulSoup(page.text, 'html.parser')
     try:
