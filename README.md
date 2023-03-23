@@ -7,8 +7,8 @@ A super simple Telegram bot that given a word it queries and scrapes a dictionar
 ## How to run standalone
 - Install `python` >= 3 and `pip`
 - Go to `src` directory
-- Run `pip install -r requirements.txt` to install dependencies
-- Run `python bot.py` to start the bot
+- Run `pip3 install -r requirements.txt` to install dependencies
+- Run `python3 bot.py` to start the bot
 - Enjoy!
 
 ## How to run with Docker
